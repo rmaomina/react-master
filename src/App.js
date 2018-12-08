@@ -10,6 +10,7 @@ import LifeCycleSample from './LifeCycleSample';
 import ValidationSampleT1 from './ValidationSampleT1';
 import ScrollBoxT1 from './ScrollBoxT1';
 import IterationSampleT1 from './IterationSampleT1';
+import SassComponent from './SassComponent';
 
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -109,7 +110,10 @@ class App extends Component {
         <h1 style={h1Style}>[LifeCycle] 랜덤 컬러값</h1>
         <button onClick={this.handleClick}>랜덤 색상</button>
         <LifeCycleSample color={this.state.color}/>
-        
+
+        {/* SCSS Styling */}
+        <h1 style={h1Style}>[LifeCycle] 랜덤 컬러값</h1>
+        <SassComponent/>
         
       </div>
     );
